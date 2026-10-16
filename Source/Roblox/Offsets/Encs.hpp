@@ -71,53 +71,19 @@ public:
     void Set(const T& Value) { operator=(Value); }
 };
 
-#define CLOSURE_CONT_ENC VMValue4
-#define CLOSURE_DEBUGNAME_DEPRECATED_ENC VMValue2
-#define LSTATE_STACKSIZE_ENC VMValue2
-#define PROTO_ABSLINEINFO_ENC VMValue1
-#define PROTO_DEBUGINSN_ENC VMValue1
-#define PROTO_DEBUGNAME_ENC VMValue4
-#define PROTO_LINEINFO_ENC VMValue3
-#define PROTO_LOCVARS_ENC VMValue3
-#define PROTO_SOURCE_ENC VMValue1
-#define PROTO_TYPEINFO_ENC VMValue2
-#define PROTO_UPVALUES_ENC VMValue4
-#define PROTO_USERDATA_ENC VMValue2
-#define TSTRING_HASH_ENC VMValue4
-#define UDATA_META_ENC VMValue4
-
-// dont scroll down
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#define CLOSURE_CONT_ENC vmval4
+#define LSTATE_STACKSIZE_ENC vmval3
+#define PROTO_ABSLINEINFO_ENC vmval4
+#define PROTO_DEBUGINSN_ENC vmval3
+#define PROTO_DEBUGNAME_ENC vmval3
+#define PROTO_LINEINFO_ENC vmval3
+#define PROTO_LOCVARS_ENC vmval3
+#define PROTO_SOURCE_ENC vmval1
+#define PROTO_TYPEINFO_ENC vmval3
+#define PROTO_UPVALUES_ENC vmval2
+#define PROTO_USERDATA_ENC vmval2
+#define TSTRING_HASH_ENC vmval1
+#define UDATA_META_ENC vmval1
 #define proto_lineinfo         PROTO_LINEINFO_ENC
 #define proto_debuginsn        PROTO_DEBUGINSN_ENC
 #define proto_typeinfo         PROTO_TYPEINFO_ENC
@@ -128,7 +94,6 @@ public:
 #define proto_debugname        PROTO_DEBUGNAME_ENC
 #define proto_userdata         PROTO_USERDATA_ENC
 #define udata_meta             UDATA_META_ENC
-#define closure_debugname      CLOSURE_DEBUGNAME_ENC
 #define closure_cont           CLOSURE_CONT_ENC
 #define tstring_hash           TSTRING_HASH_ENC
 #define lstate_stacksize       LSTATE_STACKSIZE_ENC
